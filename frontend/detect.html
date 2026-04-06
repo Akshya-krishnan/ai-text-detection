@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Detect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Enter your text here</h2>
+      <textarea id="text"></textarea>
+
+      <button id="detectBtn" onclick="detect()">Detect</button>
+      <button id="whyBtn" onclick="showReason()">Why?</button>
+
+      <h3 id="result"></h3>
+      <ul id="reason"></ul>
+
+      
+      <button id="downloadBtn" onclick="download()">Download Report</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

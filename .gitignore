@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# Models (VERY IMPORTANT 🔥)
+backend/models/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log

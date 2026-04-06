@@ -1,0 +1,143 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQajPJQPW4-93Hr_KwqjaEDxVyv0zDqGqkJmg&s")
+      no-repeat center center/cover;
+
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center; /* center horizontally */
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 15px;
+
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+h1,
+h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+p {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+
+textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 10px;
+  resize: none;
+  outline: none;
+}
+
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00c6ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 60%; /* make all buttons same width */
+}
+
+button:hover {
+  background: #0072ff;
+  color: white;
+}
+
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+
+ul {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+
+#downloadBtn {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.8);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+
+#downloadBtn.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+
+  textarea {
+    height: 120px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
+}
